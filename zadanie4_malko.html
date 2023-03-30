@@ -1,0 +1,51 @@
+<html>
+   <head>
+      <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+	  <link rel="Stylesheet" type="text/css" href="malk3.css" />
+   </head>
+<body>
+  <h2>Sposoby podłączania styli do strony (skrócone zestawienie).</h2>
+    <ol>
+      <li>
+	   <h3><b>Zewnętrzny</b> arkusz stylów.</h3>
+        <textarea>
+  <head>
+     <link rel="Stylesheet" type="text/css" href="style.css" />
+  </head>
+        </textarea>
+      <li>
+	   <h3>Styl <b>lokalny</b> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+              dopisanie arkusza do wybranego bloku treści strony.</h3>
+		<textarea>
+  <selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+        </textarea>
+      <li>
+       <h3><b>Wewnętrzny</b> arkusz stylów.</h3>
+        <textarea>
+  <head>
+<style type="text/css">
+    selektor1 { cecha: wartość; cecha2: wartość2... }
+    selektor2 { cecha: wartość; cecha2: wartość2... }
+</style>
+  </head> 
+        </textarea>
+	  <li>
+       <h3><b>Alternatywny</b> arkusz stylów.</h3>
+	   <textarea>
+  <head>
+   <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+   <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+   <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+  </head> 
+        </textarea>
+	  <li>
+	   <h3><b>Import</b> arkusza stylów.</h3>
+	   <textarea>
+  <style type="text/css">
+@import url(adres zewnętrznego arkusza stylów);
+  </style>
+        </textarea>
+      	  
+</body>
+<!--Dawid Malko 2G, 30.03.2023-->
+</html>
